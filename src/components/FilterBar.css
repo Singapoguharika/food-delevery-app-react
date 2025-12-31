@@ -1,0 +1,57 @@
+.filter-bar {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.filters-container {
+  display: flex;
+  gap: 0.8rem;
+  min-width: min-content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-btn {
+  padding: 0.7rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  color: #555;
+}
+
+.filter-btn:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+  background: rgba(255, 107, 53, 0.05);
+}
+
+.filter-btn.active {
+  background: #ff6b35;
+  color: white;
+  border-color: #ff6b35;
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .filters-container {
+    gap: 0.5rem;
+  }
+}

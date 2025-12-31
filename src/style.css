@@ -1,0 +1,91 @@
+/* Global styles moved to individual component CSS files and App.css */
+/* This file is kept for compatibility but all styles are in component CSS files */
+
+
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* FOOD GRID */
+.food-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* FOOD CARD */
+.food-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.food-card-content {
+  padding: 16px;
+}
+
+.food-card h3 {
+  font-size: 18px;
+}
+
+.food-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.btn {
+  margin-top: 12px;
+  background: #ff5a1f;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}

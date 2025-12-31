@@ -1,0 +1,41 @@
+.restaurants-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+.restaurants-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 800;
+}
+
+.restaurants-page > p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .restaurants-page {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .restaurants-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .restaurants-page > p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}

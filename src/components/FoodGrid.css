@@ -1,0 +1,133 @@
+.restaurants-section {
+  padding: 5rem 2rem;
+  background-color: #f5f7fa;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.restaurants-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.restaurants-section > .section-container > p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.restaurant-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.restaurant-info {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-info h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.cuisine {
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.restaurant-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.restaurant-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .restaurants-section {
+    padding: 3rem 1rem;
+  }
+
+  .restaurants-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .restaurants-section > .section-container > p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .restaurants-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .restaurant-image {
+    height: 180px;
+  }
+}
+
