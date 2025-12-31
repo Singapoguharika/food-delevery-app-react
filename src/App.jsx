@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Restaurant from './pages/Restaurant';
 import Restaurants from './pages/Restaurants';
 import Foods from './pages/Foods';
-import Cart from './pages/cart';
+import Cart from './pages/Cart';
 import Footer from './components/Footer';
 import './App.css';
 
